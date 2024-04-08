@@ -97,18 +97,6 @@ window.new_hamb.classList.toggle("is-active");
 });
 
 $(document).ready(function(){
-    $('.accordion-list > li > .answer').hide();
-      
-    $('.accordion-list > li').click(function() {
-      if ($(this).hasClass("active")) {
-        $(this).removeClass("active").find(".answer").slideUp();
-      } else {
-        $(".accordion-list > li.active .answer").slideUp();
-        $(".accordion-list > li.active").removeClass("active");
-        $(this).addClass("active").find(".answer").slideDown();
-      }
-      return false;
-    });
     
     lightGallery(document.getElementById('aniimated-thumbnials'), {
         thumbnail:true
@@ -197,13 +185,6 @@ function isValidEmail(email) {
     return regex.test(email);
 }
 
-function clearForm() {
-    // Отримуємо посилання на поле введення за його ID
-    var inputField = document.getElementById('inputFieldId'); // Замість 'inputFieldId' вкажіть ID вашого поля введення
-
-    // Очищаємо значення поля введення
-    inputField.value = '';
-}
 
 document.querySelectorAll('.input').forEach(elem=>{
     elem.onfocus = function(){
