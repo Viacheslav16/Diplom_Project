@@ -1,3 +1,4 @@
+
 footer{
     background-image: url('../images/Rectanglegallery.jpeg' );
     aspect-ratio: 1440/300;
@@ -7,9 +8,15 @@ footer{
 }
 .features {
     &-descr{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: end;
-        justify-content: space-between;
+        -webkit-box-align: end;
+            -ms-flex-align: end;
+                align-items: end;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         padding: 80px 20px;
     }
     &-time {
@@ -21,8 +28,12 @@ footer{
         margin-bottom: 50px;
     }
     &-links {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         gap: 100px;
         margin-top: 90px;
     }

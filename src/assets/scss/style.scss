@@ -1,3 +1,4 @@
+
 @import 'vars';
 
 @import 'hamburger';
@@ -9,7 +10,8 @@
 *::after {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 ul {
     list-style: none;
@@ -22,6 +24,8 @@ img {
        object-fit: cover;
 }
 a, button {
+    -webkit-transition: all .2s ease;
+    -o-transition: all .2s ease;
     transition: all .2s ease;
     text-decoration: none;
     color: $color_wt;
@@ -39,9 +43,16 @@ body {
 }
 
 .page_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     min-height: 100vh;
 }
 h1 {
@@ -79,6 +90,8 @@ p {
 .my-link{
     padding: 10px 30px;
     border-radius: 20px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(209, 209, 206)),to(rgba(207, 207, 196, 0)));
+    background: -o-linear-gradient(top, rgb(209, 209, 206),rgba(207, 207, 196, 0) 100%);
     background: linear-gradient(180.00deg, rgb(209, 209, 206),rgba(207, 207, 196, 0) 100%);
     cursor: pointer;
     font-size: 20px;

@@ -33,6 +33,8 @@
 		padding: 0 4px;
 		color: $color_wt;
 		background: transparent;
+		-webkit-transition: all 0.3s ease;
+		-o-transition: all 0.3s ease;
 		transition: all 0.3s ease;
 	}
 
@@ -51,7 +53,33 @@
         color: $color_wt;
         border-bottom: 2px solid $color_myblue;
         background-color: transparent;
+		-webkit-transition: all 0.2s ease-in-out;
+		-o-transition: all 0.2s ease-in-out;
 		transition: all 0.2s ease-in-out;
+
+		&::-webkit-input-placeholder {
+			opacity: 0;
+			visibility: hidden;
+			color: transparent;
+		}
+
+		&::-moz-placeholder {
+			opacity: 0;
+			visibility: hidden;
+			color: transparent;
+		}
+
+		&:-ms-input-placeholder {
+			opacity: 0;
+			visibility: hidden;
+			color: transparent;
+		}
+
+		&::-ms-input-placeholder {
+			opacity: 0;
+			visibility: hidden;
+			color: transparent;
+		}
 
 		&::placeholder {
 			opacity: 0;
@@ -70,8 +98,49 @@
 				font-size: 14px;
 				font-weight: 500;
 				color:$color_myblue;
-                transform: scale(0.9) translateX(0) translateY(-10px);
+                -webkit-transform: scale(0.9) translateX(0) translateY(-10px);
+                    -ms-transform: scale(0.9) translateX(0) translateY(-10px);
+                        transform: scale(0.9) translateX(0) translateY(-10px);
+				-webkit-transition: all 0.2s ease-in-out;
+				-o-transition: all 0.2s ease-in-out;
 				transition: all 0.2s ease-in-out;
+			}
+		}
+
+		&:not(:-moz-placeholder-shown).form-input {
+            border: 1px solid $color_wt;
+			&:not(:focus) {
+				& ~ .form-label {
+					top: -12px;
+					left: 16px;
+					z-index: 9;
+					font-size: 14px;
+					font-weight: 500;
+                    color:$color_myblue;
+                    transform: scale(0.9) translateX(0) translateY(-10px);
+					-webkit-transition: all 0.2s ease-in-out;
+					-o-transition: all 0.2s ease-in-out;
+					transition: all 0.2s ease-in-out;
+				}
+			}
+		}
+
+		&:not(:-ms-input-placeholder).form-input {
+            border: 1px solid $color_wt;
+			&:not(:focus) {
+				& ~ .form-label {
+					top: -12px;
+					left: 16px;
+					z-index: 9;
+					font-size: 14px;
+					font-weight: 500;
+                    color:$color_myblue;
+                    -ms-transform: scale(0.9) translateX(0) translateY(-10px);
+                        transform: scale(0.9) translateX(0) translateY(-10px);
+					-webkit-transition: all 0.2s ease-in-out;
+					-o-transition: all 0.2s ease-in-out;
+					transition: all 0.2s ease-in-out;
+				}
 			}
 		}
 
@@ -85,7 +154,11 @@
 					font-size: 14px;
 					font-weight: 500;
                     color:$color_myblue;
-                    transform: scale(0.9) translateX(0) translateY(-10px);
+                    -webkit-transform: scale(0.9) translateX(0) translateY(-10px);
+                        -ms-transform: scale(0.9) translateX(0) translateY(-10px);
+                            transform: scale(0.9) translateX(0) translateY(-10px);
+					-webkit-transition: all 0.2s ease-in-out;
+					-o-transition: all 0.2s ease-in-out;
 					transition: all 0.2s ease-in-out;
 				}
 			}
@@ -101,6 +174,8 @@
 }
 
 .contact-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding:30px 25px 20px;
     background-color: $secondary-button-bg;

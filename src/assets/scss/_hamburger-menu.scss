@@ -1,3 +1,4 @@
+
 /*Hamburger*/
 
 .page_overlay {
@@ -10,6 +11,8 @@
     z-index: 1002;
     opacity: 0;
     visibility: hidden;
+    -webkit-transition: all .4s ease;
+    -o-transition: all .4s ease;
     transition: all .4s ease;
 }
 
@@ -22,8 +25,13 @@
     color: $secondary-white;
     background-color: $panel_bg;
     z-index: 1005;
-    box-shadow: 0 0 10px 10px $color_wt;
-    transform: translateX(-120%);
+    -webkit-box-shadow: 0 0 10px 10px $color_wt;
+            box-shadow: 0 0 10px 10px $color_wt;
+    -webkit-transform: translateX(-120%);
+        -ms-transform: translateX(-120%);
+            transform: translateX(-120%);
+    -webkit-transition: all .4s ease;
+    -o-transition: all .4s ease;
     transition: all .4s ease;
 
     .mobile_nav_top {
@@ -34,6 +42,8 @@
 }
 
 .panel_top {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 125px;
     border-bottom: 1px solid $color_wt;
@@ -83,8 +93,12 @@
 }
 
 .mobile_social_link {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: 20px;
     img {
         &:hover {
@@ -105,7 +119,9 @@
     }
 
     .menu-panel {
-        transform: translateX(0);
+        -webkit-transform: translateX(0);
+            -ms-transform: translateX(0);
+                transform: translateX(0);
     }
 }
 

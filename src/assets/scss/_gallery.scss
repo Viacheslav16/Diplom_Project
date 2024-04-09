@@ -1,17 +1,41 @@
+
 .gallery-section{
     .anime-gallery {
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: 44% 50px 44%;
         grid-template-columns: repeat(2, 44%);
+        -ms-grid-rows: 360px 50px 360px;
         grid-template-rows: repeat(2, 360px);
         gap: 50px;
         padding-bottom: 60px;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         a {
             cursor: pointer;
             &:hover {
-                transform: scale(1.1);
+                -webkit-transform: scale(1.1);
+                    -ms-transform: scale(1.1);
+                        transform: scale(1.1);
             }
         }
+    }
+    .anime-gallery > *:nth-child(1) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1
+    }
+    .anime-gallery > *:nth-child(2) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3
+    }
+    .anime-gallery > *:nth-child(3) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1
+    }
+    .anime-gallery > *:nth-child(4) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 3
     }
 }
 .lg-img-wrap {

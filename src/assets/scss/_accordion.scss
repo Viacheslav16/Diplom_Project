@@ -1,3 +1,4 @@
+
 .accordion {
     margin-bottom: 100px;
     &-list {
@@ -22,7 +23,9 @@
             &.active {
                 h3 {
                     &:after {
-                        transform: rotate(45deg);
+                        -webkit-transform: rotate(45deg);
+                            -ms-transform: rotate(45deg);
+                                transform: rotate(45deg);
                         background-color: $color_wt;
                     }
                 }
@@ -46,6 +49,8 @@
                     right: 0;
                     top: 35%;
                     color: $secondary-white;
+                    -webkit-transition: all 0.3s ease-in-out;
+                    -o-transition: all 0.3s ease-in-out;
                     transition: all 0.3s ease-in-out;
                     font-size: 18px;
                 }
