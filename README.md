@@ -1,1 +1,1 @@
-Here is the link to project on SPYRO : ttps://viacheslav16.github.io/Diplom_Project/
+Here is the link to project on SPYRO : https://viacheslav16.github.io/Diplom_Project/
