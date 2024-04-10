@@ -253,6 +253,13 @@ main {
     &-info {
         padding: 24px 40px;
         border: 1px solid $color_wt;
+        cursor: pointer;
+        &:hover {
+            -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            transform: scale(1.1);
+            transition: all 0.3s ease;
+        }
         h3 {
             color: $color_primar;
             font-size: 28px;
@@ -392,6 +399,7 @@ main {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+        cursor: pointer;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
@@ -465,6 +473,7 @@ main {
         background:$other_color;
         padding: 10px;
         border-radius: 10px;
+        cursor: pointer;
         &:hover {
             -webkit-transform: rotate(0);
                 -ms-transform: rotate(0);
@@ -584,6 +593,17 @@ main {
     background: $small_bg;
     border-radius: 10px;
     padding: 10px 15px;
+    cursor: pointer;
+    &:hover {
+        -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+                transform: scale(1.1);
+                transition: all 0.3s ease;
+                background: $panel_bg;
+                h3 {
+                    color: $color_myblue;
+                }
+    }
     &-pic {
         img {
             width: 100%;
@@ -662,6 +682,14 @@ main {
         background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 254, 254, 0.25)), to(rgba(181, 181, 181, .25)));
         background: -o-linear-gradient(top, rgba(255, 254, 254, 0.25), rgba(181, 181, 181, .25) 100%);
         background: linear-gradient(180deg, rgba(255, 254, 254, 0.25), rgba(181, 181, 181, .25) 100%);
+        cursor: pointer;
+        &:hover {
+            -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            transform: scale(1.1);
+            transition: all 0.3s ease;
+            background: linear-gradient(180deg, rgba(50, 66, 95, 0.801), rgba(50, 66, 95, 0.614) 100%);
+        }
     }
     &-subtitle {
         background-color: $other_color;

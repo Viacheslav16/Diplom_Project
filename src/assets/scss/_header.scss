@@ -5,9 +5,9 @@ header {
     top: 0;
     width: 100%;
     z-index: 1001;
-    background: -webkit-gradient(linear, right top, left top, color-stop(0, rgba(72, 129, 176, 0.75)), color-stop(20%, rgba(73, 109, 124, 0.77)), color-stop(60%, #c5c5cb73)), 0 0;
-    background: -o-linear-gradient(right, rgba(72, 129, 176, 0.75) 0, rgba(73, 109, 124, 0.77) 20%, #c5c5cb73 60%), 0 0;
-    background: linear-gradient(270deg, rgba(72, 129, 176, 0.75) 0, rgba(73, 109, 124, 0.77) 20%, #c5c5cb73 60%), 0 0;    -webkit-backdrop-filter: blur(4.5px);
+    background: -webkit-gradient(linear, right top, left top, color-stop(0, rgba(72, 129, 176, 0.75)), color-stop(20%, rgba(73, 109, 124, 0.77)), color-stop(60%, #72727673)), 0 0;
+    background: -o-linear-gradient(right, rgba(72, 129, 176, 0.75) 0, rgba(73, 109, 124, 0.77) 20%, #72727673 60%), 0 0;
+    background: linear-gradient(270deg, rgba(72, 129, 176, 0.75) 0, rgba(73, 109, 124, 0.77) 20%, #72727673 60%), 0 0;    -webkit-backdrop-filter: blur(4.5px);
     backdrop-filter: blur(4.5px);
 }
 
